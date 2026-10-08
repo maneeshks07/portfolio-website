@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Name | Web Developer</title>
+<meta name="description" content="Portfolio of a freelance web developer: PHP and MySQL apps, and responsive websites.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="bar">
+    <a class="brand" href="#top">Maneesh</a>
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" aria-label="Main">
+      <a href="#work">Work</a>
+      <a href="#skills">Skills</a>
+      <a href="#about">About</a>
+      <a class="cta" href="#contact">Hire me</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero wrap">
+    <div>
+      <h1>I build websites and web apps that people can use on day one.</h1>
+      <p class="lead">Freelance web developer working with HTML, CSS, JavaScript, PHP and MySQL. Admin dashboards, booking systems, blogs and business websites.</p>
+      <div class="btn-row">
+        <a class="btn" href="#work">See my work</a>
+        <a class="btn ghost" href="#contact">Get in touch</a>
+      </div>
+    </div>
+    <figure class="code" aria-label="Code sample">
+      <div class="dots"><i></i><i></i><i></i></div>
+<pre><code><span class="k">const</span> developer = {
+  <span class="p">stack</span>: [<span class="s">"HTML"</span>, <span class="s">"CSS"</span>, <span class="s">"JS"</span>, <span class="s">"PHP"</span>, <span class="s">"MySQL"</span>],
+  <span class="p">projects</span>: <span class="n">5</span>,
+  <span class="p">available</span>: <span class="k">true</span>,
+};</code></pre>
+    </figure>
+  </section>
+
+  <section id="work" class="section wrap">
+    <h2>Work</h2>
+    <p class="lead">Five sample projects. Select a picture to view it larger.</p>
+    <div class="gallery">
+      <figure>
+        <button class="tile" data-full="images/p1-dashboard.svg" data-title="Student Portal Dashboard" data-text="Admin dashboard with login, student records, search and profile pages."><img src="images/p1-dashboard.svg" alt="Drawn preview of an admin dashboard with sidebar, stat cards and a table" loading="lazy"></button>
+        <figcaption><h3>Student Portal Dashboard</h3><p>PHP, MySQL</p></figcaption>
+      </figure>
+      <figure>
+        <button class="tile" data-full="images/p2-booking.svg" data-title="Appointment Booking System" data-text="Customers pick a date and time. Staff manage bookings from an admin panel."><img src="images/p2-booking.svg" alt="Drawn preview of a booking calendar with highlighted days" loading="lazy"></button>
+        <figcaption><h3>Appointment Booking System</h3><p>PHP, MySQL</p></figcaption>
+      </figure>
+      <figure>
+        <button class="tile" data-full="images/p3-blog.svg" data-title="Blog CMS" data-text="Public blog with search and categories, plus an admin panel for draft and published posts."><img src="images/p3-blog.svg" alt="Drawn preview of a blog with three post cards and a list of posts" loading="lazy"></button>
+        <figcaption><h3>Blog CMS</h3><p>PHP, MySQL</p></figcaption>
+      </figure>
+      <figure>
+        <button class="tile" data-full="images/p5-business.jpg" data-title="Juniper &amp; Oak, 6-page business website" data-text="Responsive website with gallery, pricing, FAQ and contact form."><img src="images/p5-business.jpg" alt="Home page of a sample interior design studio website" loading="lazy"></button>
+        <figcaption><h3>Business website</h3><p>HTML, CSS, JavaScript</p></figcaption>
+      </figure>
+      <figure>
+        <button class="tile" data-full="images/p0-clothing.jpg" data-title="Clothing Store" data-text="One-page store website with hero, about, services, gallery and contact."><img src="images/p0-clothing.jpg" alt="Home page of a clothing store website with a teal hoodie photo" loading="lazy"></button>
+        <figcaption><h3>Clothing store website</h3><p>HTML, CSS</p></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="skills" class="section wrap">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div><h3>Front end</h3><ul><li>HTML and CSS</li><li>JavaScript</li><li>Responsive layouts</li><li>Forms and validation</li></ul></div>
+      <div><h3>Back end</h3><ul><li>PHP (OOP)</li><li>MySQL</li><li>Login and password hashing</li><li>Admin panels</li></ul></div>
+      <div><h3>Tools</h3><ul><li>Git and GitHub</li><li>VS Code</li><li>XAMPP</li><li>Netlify hosting</li></ul></div>
+    </div>
+  </section>
+
+  <section id="about" class="section wrap about">
+    <div class="avatar" aria-hidden="true">YN</div>
+    <div>
+      <h2>About</h2>
+      <p>I am a web developer who likes simple, tidy code and clear communication. Tell me what you need, and I will send a plan, a fixed price and regular progress updates.</p>
+      <p>Replace this text with a few lines about you: where you are based, how long you have been building websites, and the kind of clients you like working with.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="section wrap contact">
+    <div>
+      <h2>Let's work together</h2>
+      <p class="lead">Send a message about your project. I reply within a day.</p>
+      <p><a href="mailto:you@example.com">you@example.com</a></p>
+    </div>
+    <form class="form" id="contact-form" novalidate>
+      <label for="name">Your name</label>
+      <input id="name" name="name" type="text" autocomplete="name" required>
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" autocomplete="email" required>
+      <label for="message">About your project</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <button class="btn" type="submit">Send message</button>
+      <p class="form-status" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer"><div class="wrap"><p>&copy; 2026 Your Name. All rights reserved.</p></div></footer>
+
+<dialog id="lightbox" aria-label="Project viewer">
+  <button class="close">Close</button>
+  <img alt="">
+  <div class="cap"><h3></h3><p></p></div>
+</dialog>
+
+<script src="js/main.js"></script>
+</body>
+</html>
